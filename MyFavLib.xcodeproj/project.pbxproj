@@ -11,6 +11,8 @@
 		842D22BF274663E4004B9B06 /* MyFavLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 842D22BC274663E4004B9B06 /* MyFavLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		842D22D227466673004B9B06 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22D127466673004B9B06 /* CustomDateFormatter.swift */; };
 		842D22D427466695004B9B06 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22D327466695004B9B06 /* String+Extensions.swift */; };
+		842D22DF2746810C004B9B06 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22DE2746810C004B9B06 /* Request.swift */; };
+		842D22E5274687EB004B9B06 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22E4274687EB004B9B06 /* URLComponents.swift */; };
 		914A3A850DAE320B44695958 /* Pods_MyFavLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5CEFBD05CE68DED36ED1F0 /* Pods_MyFavLib.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,8 @@
 		842D22BD274663E4004B9B06 /* MyFavLib.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MyFavLib.docc; sourceTree = "<group>"; };
 		842D22D127466673004B9B06 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
 		842D22D327466695004B9B06 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		842D22DE2746810C004B9B06 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		842D22E4274687EB004B9B06 /* URLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponents.swift; sourceTree = "<group>"; };
 		8C5CEFBD05CE68DED36ED1F0 /* Pods_MyFavLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFavLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,8 +74,18 @@
 			children = (
 				842D22D127466673004B9B06 /* CustomDateFormatter.swift */,
 				842D22D327466695004B9B06 /* String+Extensions.swift */,
+				842D22D52746766A004B9B06 /* Network */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		842D22D52746766A004B9B06 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				842D22DE2746810C004B9B06 /* Request.swift */,
+				842D22E4274687EB004B9B06 /* URLComponents.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D4A9DD59B5A386CBB92B2339 /* Pods */ = {
@@ -196,7 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842D22E5274687EB004B9B06 /* URLComponents.swift in Sources */,
 				842D22BE274663E4004B9B06 /* MyFavLib.docc in Sources */,
+				842D22DF2746810C004B9B06 /* Request.swift in Sources */,
 				842D22D427466695004B9B06 /* String+Extensions.swift in Sources */,
 				842D22D227466673004B9B06 /* CustomDateFormatter.swift in Sources */,
 			);
