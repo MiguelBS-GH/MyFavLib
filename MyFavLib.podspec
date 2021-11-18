@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyFavLib"
-  spec.version      = "0.1.0"
+  spec.version      = "0.2.0"
   spec.summary      = "My personal library"
 
   spec.homepage     = "https://github.com/MiguelBS-GH/MyFavLib"
