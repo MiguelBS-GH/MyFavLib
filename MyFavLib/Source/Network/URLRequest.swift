@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension URLRequest {
+public extension URLRequest {
     init(service: ServiceProtocol) {
         let urlComponents = URLComponents(service: service) // 1
         self.init(url: urlComponents.url!) // 2

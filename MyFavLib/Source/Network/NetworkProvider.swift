@@ -7,18 +7,18 @@
 
 import Foundation
 
-protocol ProviderProtocol {
+public protocol ProviderProtocol {
     func request<T>(type: T.Type, service: ServiceProtocol, completion: @escaping (NetworkResponse<T>) -> ()) where T: Decodable
 }
 
-final class URLSessionProvider: ProviderProtocol { // 1
+public final class URLSessionProvider: ProviderProtocol { // 1
     private var session: URLSessionProtocol
 
-    init(session: URLSessionProtocol = URLSession.shared) { // 2
+    public init(session: URLSessionProtocol = URLSession.shared) { // 2
         self.session = session
     }
 
-    func request<T>(type: T.Type, service: ServiceProtocol, completion: @escaping (NetworkResponse<T>) -> ()) where T: Decodable {
+    public func request<T>(type: T.Type, service: ServiceProtocol, completion: @escaping (NetworkResponse<T>) -> ()) where T: Decodable {
         let request = URLRequest(service: service) // 1
         let task = session.dataTask(request: request, completionHandler: { [weak self] data, response, error in // 2
             let httpResponse = response as? HTTPURLResponse

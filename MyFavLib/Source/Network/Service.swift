@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ServiceProtocol {
+public protocol ServiceProtocol {
     var baseURL: URL { get }
     var path: String { get }
     var method: HTTPMethod { get }
@@ -16,25 +16,25 @@ protocol ServiceProtocol {
     var parametersEncoding: ParametersEncoding { get }
 }
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
     case delete = "DELETE"
 }
 
-typealias ProgressHandler = (Float) -> Void
+public typealias ProgressHandler = (Float) -> Void
 
-typealias Parameters = [String: Any]
+public typealias Parameters = [String: Any]
 
-enum Task {
+public enum Task {
     case requestPlain
     case requestParameters(Parameters)
 }
 
-typealias Headers = [String: String]
+public typealias Headers = [String: String]
 
-enum ParametersEncoding {
+public enum ParametersEncoding {
     case url
     case json
 }

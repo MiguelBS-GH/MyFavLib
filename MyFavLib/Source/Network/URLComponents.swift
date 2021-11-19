@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension URLComponents {
+public extension URLComponents {
 
-    init(service: ServiceProtocol) {
+    public init(service: ServiceProtocol) {
         let url = service.baseURL.appendingPathComponent(service.path) // 1
         self.init(url: url, resolvingAgainstBaseURL: false)! // 2
         guard case let .requestParameters(parameters) = service.task, service.parametersEncoding == .url else { return } // 3
