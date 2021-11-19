@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84140F3127479826002819F0 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84140F3027479826002819F0 /* URLRequest.swift */; };
+		84140F33274799E0002819F0 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84140F32274799E0002819F0 /* NetworkResponse.swift */; };
+		84140F3527479A70002819F0 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84140F3427479A70002819F0 /* NetworkProvider.swift */; };
+		84140F3727479B70002819F0 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84140F3627479B70002819F0 /* URLSession.swift */; };
 		842D22BE274663E4004B9B06 /* MyFavLib.docc in Sources */ = {isa = PBXBuildFile; fileRef = 842D22BD274663E4004B9B06 /* MyFavLib.docc */; };
 		842D22BF274663E4004B9B06 /* MyFavLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 842D22BC274663E4004B9B06 /* MyFavLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		842D22D227466673004B9B06 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22D127466673004B9B06 /* CustomDateFormatter.swift */; };
 		842D22D427466695004B9B06 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22D327466695004B9B06 /* String+Extensions.swift */; };
-		842D22DF2746810C004B9B06 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22DE2746810C004B9B06 /* Request.swift */; };
+		842D22DF2746810C004B9B06 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22DE2746810C004B9B06 /* Service.swift */; };
 		842D22E5274687EB004B9B06 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D22E4274687EB004B9B06 /* URLComponents.swift */; };
 		914A3A850DAE320B44695958 /* Pods_MyFavLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5CEFBD05CE68DED36ED1F0 /* Pods_MyFavLib.framework */; };
 /* End PBXBuildFile section */
@@ -19,12 +23,16 @@
 /* Begin PBXFileReference section */
 		4A846577FBA811A56EC3F793 /* Pods-MyFavLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFavLib.release.xcconfig"; path = "Target Support Files/Pods-MyFavLib/Pods-MyFavLib.release.xcconfig"; sourceTree = "<group>"; };
 		6BF9DDDEA63D6A7F4F60D26C /* Pods-MyFavLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFavLib.debug.xcconfig"; path = "Target Support Files/Pods-MyFavLib/Pods-MyFavLib.debug.xcconfig"; sourceTree = "<group>"; };
+		84140F3027479826002819F0 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		84140F32274799E0002819F0 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		84140F3427479A70002819F0 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		84140F3627479B70002819F0 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		842D22B9274663E4004B9B06 /* MyFavLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFavLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		842D22BC274663E4004B9B06 /* MyFavLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFavLib.h; sourceTree = "<group>"; };
 		842D22BD274663E4004B9B06 /* MyFavLib.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MyFavLib.docc; sourceTree = "<group>"; };
 		842D22D127466673004B9B06 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
 		842D22D327466695004B9B06 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		842D22DE2746810C004B9B06 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		842D22DE2746810C004B9B06 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		842D22E4274687EB004B9B06 /* URLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponents.swift; sourceTree = "<group>"; };
 		8C5CEFBD05CE68DED36ED1F0 /* Pods_MyFavLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFavLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,8 +90,12 @@
 		842D22D52746766A004B9B06 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				842D22DE2746810C004B9B06 /* Request.swift */,
+				84140F3027479826002819F0 /* URLRequest.swift */,
+				842D22DE2746810C004B9B06 /* Service.swift */,
 				842D22E4274687EB004B9B06 /* URLComponents.swift */,
+				84140F32274799E0002819F0 /* NetworkResponse.swift */,
+				84140F3427479A70002819F0 /* NetworkProvider.swift */,
+				84140F3627479B70002819F0 /* URLSession.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -212,7 +224,11 @@
 			files = (
 				842D22E5274687EB004B9B06 /* URLComponents.swift in Sources */,
 				842D22BE274663E4004B9B06 /* MyFavLib.docc in Sources */,
-				842D22DF2746810C004B9B06 /* Request.swift in Sources */,
+				84140F33274799E0002819F0 /* NetworkResponse.swift in Sources */,
+				842D22DF2746810C004B9B06 /* Service.swift in Sources */,
+				84140F3127479826002819F0 /* URLRequest.swift in Sources */,
+				84140F3727479B70002819F0 /* URLSession.swift in Sources */,
+				84140F3527479A70002819F0 /* NetworkProvider.swift in Sources */,
 				842D22D427466695004B9B06 /* String+Extensions.swift in Sources */,
 				842D22D227466673004B9B06 /* CustomDateFormatter.swift in Sources */,
 			);
