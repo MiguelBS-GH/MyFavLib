@@ -12,7 +12,7 @@ public extension String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm:ssa"
         guard let date = dateFormatter.date(from: self) else {
-            fatalError("Fail")
+            fatalError("Fail formating to hh:mm:ssa")
         }
         return date
     }
